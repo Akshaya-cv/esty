@@ -32,7 +32,7 @@ public class Action extends Baseclass  {
 
 	}
 
-	public static void click(Object driver, WebElement ele) {
+	public static void click(WebDriver driver, WebElement ele) {
 
 		Actions act = new Actions(driver);
 		act.moveToElement(ele).click().build().perform();
@@ -252,7 +252,7 @@ public class Action extends Baseclass  {
 			String javaScript = "var evObj = document.createEvent('MouseEvents');"
 					+ "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);"
 					+ "arguments[0].dispatchEvent(evObj);";
-			JavascriptExecutor driver;
+			JavascriptExecutor driver = null;
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript(javaScript, mo);
 			flag = true;
@@ -744,6 +744,11 @@ public class Action extends Baseclass  {
 	}
 
 	public static void LaunchNewWindow(Object driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void type(WebElement zetuserName, String uname) {
 		// TODO Auto-generated method stub
 		
 	}

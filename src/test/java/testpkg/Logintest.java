@@ -43,23 +43,5 @@ public class Logintest {
 		  
 	}
 
-			public void TitleVerification() throws Throwable {
-
-				String expectedurl="https://www.etsy.com/";
-		String actualurl= ((Object) driver).getCurrentUrl();
-		  
-		     if(actualurl.equals(expectedurl))
-		     {
-		    	System.out.println("pass");
-		     }else
-		     {
-		    	System.out.println("fail");
-		     }
-           
-
-          
-}
-
-
-}
+			}
 
