@@ -32,9 +32,9 @@ public class Action extends Baseclass  {
 
 	}
 
-	public static void click(WebDriver driver, WebElement ele) {
+	public static void click(Object driver, WebElement ele) {
 
-		Actions act = new Actions(driver);
+		Actions act = new Actions((WebDriver) driver);
 		act.moveToElement(ele).click().build().perform();
 
 	}
@@ -749,6 +749,11 @@ public class Action extends Baseclass  {
 	}
 
 	public static void type(WebElement zetuserName, String uname) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void type(WebElement quantity, int i) {
 		// TODO Auto-generated method stub
 		
 	}
